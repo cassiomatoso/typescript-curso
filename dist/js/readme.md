@@ -1,0 +1,1 @@
+Arquivos gerados pelo compilador do ts.
