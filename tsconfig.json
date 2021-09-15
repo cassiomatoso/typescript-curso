@@ -5,8 +5,12 @@
         //para qual versão do ECMS que será convertido
         "target": "ES6",
         //impede a conversão em caso de ts com erro
-        "noEmitOnError": true
+        "noEmitOnError": true,
+        //Não deixa passar nada com tipagem implicita any
+        "noImplicitAny": true
     },
     //informa onde estão os arquivos ts que serão convertidos para js
-    "include": ["app/**/*"]
+    "include": [
+        "app/**/*"
+    ]
 }
