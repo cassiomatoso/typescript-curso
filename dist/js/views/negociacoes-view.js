@@ -1,7 +1,5 @@
-export class NegociacoesView {
-    constructor(seletor) {
-        this.elemento = document.querySelector(seletor);
-    }
+import { View } from "./view.js";
+export class NegociacoesView extends View {
     //método que declara o template da view
     template(model) {
         return `
@@ -26,11 +24,5 @@ export class NegociacoesView {
                 </tbody>
             </table>
         `;
-    }
-    //método que renderiza o template no elemento capturado pelo construtor
-    update(model) {
-        const template = this.template(model);
-        console.log(template);
-        this.elemento.innerHTML = template;
     }
 }
