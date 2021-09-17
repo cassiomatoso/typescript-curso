@@ -1,3 +1,4 @@
+import { DiasDaSemana } from "../enums/dias-da-semana.js";
 import { Negociacao } from "../models/negociacao.js";
 import { Negociacoes } from "../models/negociacoes.js";
 import { MensagemView } from "../views/mensagem-view.js";
@@ -14,14 +15,16 @@ export class NegociacaoController {
     }
     adiciona() {
         const negociacao = this.criaNegociacao();
-        if (negociacao.data.getDay() > 0 && negociacao.data.getDay() < 6) {
-            this.negociacoes.adiciona(negociacao);
-            this.limparFormulario();
-            this.atualizaView();
-        }
-        else {
+        if (!this.diaUtil(negociacao.data)) {
             this.mensagemView.update('Apenas negociações em dias úteis são válidas');
+            return;
         }
+        this.negociacoes.adiciona(negociacao);
+        this.limparFormulario();
+        this.atualizaView();
+    }
+    diaUtil(data) {
+        return data.getDay() > DiasDaSemana.DOMINGO && data.getDay() < DiasDaSemana.SABADO;
     }
     criaNegociacao() {
         const exp = /-/g;
