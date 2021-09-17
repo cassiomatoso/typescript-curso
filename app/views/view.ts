@@ -13,6 +13,6 @@ export abstract class View<T> {
     }
 
     //Obriga as classes filhas a implementarem o método template e evita erro em run-time
-    abstract template(model: T): string;
+    protected abstract template(model: T): string;
 
 }
