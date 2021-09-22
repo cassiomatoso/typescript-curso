@@ -1,1 +1,1 @@
-Diretório para padronizar constantes
+Diretório para padronizar/armazenar consts
