@@ -1,1 +1,1 @@
-Arquivos gerados pelo compilador do ts.
+**Arquivos gerados pelo compilador do ts.**
