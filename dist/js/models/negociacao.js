@@ -13,4 +13,12 @@ export class Negociacao {
         const data = new Date(this._data.getTime());
         return this._data;
     }
+    //retorna uma instância dela mesma convertida - todo método static posso chamar diretamente na classe
+    static criaDe(dataString, quantidadeString, valorString) {
+        const exp = /-/g;
+        const date = new Date(dataString.replace(exp, ','));
+        const quantidade = parseInt(quantidadeString);
+        const valor = parseFloat(valorString);
+        return new Negociacao(date, quantidade, valor);
+    }
 }
