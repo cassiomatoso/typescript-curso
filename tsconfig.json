@@ -9,7 +9,9 @@
         //Não deixa passar nada com tipagem implicita any
         "noImplicitAny": true,
         //Removendo comentários dos js gerados pelo tsc
-        "removeComments": true
+        "removeComments": true,
+        //Obriga o tratamento de valores nulos
+        "strictNullChecks": true
     },
     //informa onde estão os arquivos ts que serão convertidos para js
     "include": [
