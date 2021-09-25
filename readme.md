@@ -1,5 +1,7 @@
-<h3> Criado com base em: </h3>
-<ol> 
-  <li><a href="https://cursos.alura.com.br/course/typescript-evoluindo-javascript">Curso TypeScript parte 1: evoluindo seu JavaScript </li>
-  <li><a href="https://cursos.alura.com.br/course/typescript-avancando-linguagem">Curso TypeScript parte 2: avançando na linguagem</li>
-</ol>
+# Sistema de Negociação 
+### Criado com base em:
+ 
+1. [Curso TypeScript parte 1: Evoluindo seu JavaScript](https://cursos.alura.com.br/course/typescript-evoluindo-javascript)
+2. [Curso TypeScript parte 2: Avançando na linguagem](https://cursos.alura.com.br/course/typescript-avancando-linguagem)
+3. [Curso TypeScript parte 3: Mais técnicas e boas práticas](https://cursos.alura.com.br/course/typescript-tecnicas-boas-praticas)
+  
