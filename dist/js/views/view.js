@@ -1,4 +1,3 @@
-//Evita instâncias diretas de View
 export class View {
     constructor(seletor, escapar) {
         this.escapar = false;

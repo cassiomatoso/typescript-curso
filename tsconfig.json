@@ -7,7 +7,9 @@
         //impede a conversão em caso de ts com erro
         "noEmitOnError": true,
         //Não deixa passar nada com tipagem implicita any
-        "noImplicitAny": true
+        "noImplicitAny": true,
+        //Removendo comentários dos js gerados pelo tsc
+        "removeComments": true
     },
     //informa onde estão os arquivos ts que serão convertidos para js
     "include": [
