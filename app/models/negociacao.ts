@@ -17,7 +17,7 @@ export class Negociacao {
     }
 
     //retorna uma instância dela mesma convertida - todo método static posso chamar diretamente na classe
-    public static criaDe(dataString: string, quantidadeString: string, valorString: string): Negociacao{
+    public static criaDe(dataString: string, quantidadeString: string, valorString: string): Negociacao {
         const exp = /-/g;
         const date = new Date(dataString.replace(exp, ','));
         const quantidade = parseInt(quantidadeString);
